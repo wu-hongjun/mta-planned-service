@@ -18,7 +18,7 @@ def get_api_key():
                         content = response.text()
                         print(f"JavaScript URL: {response.url}", f"\nStatus: {response.status}")
                         # Improved logic to extract the API key
-                        key_phrase = 'ZZ="'
+                        key_phrase = 'eee="'
                         if key_phrase in content:
                             start_index = content.find(key_phrase) + len(key_phrase)
                             end_index = content.find('"', start_index)
